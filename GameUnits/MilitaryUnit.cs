@@ -15,5 +15,9 @@ namespace GameUnits
 
         //Constructor
         public MilitaryUnit(int movement, int health, int attackPower) : base(movement, health)
+        {
+            //Attack Power
+            AttackPower = attackPower;
+        }
     }
 }
