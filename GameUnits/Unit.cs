@@ -4,9 +4,9 @@ namespace GameUnits
 {
     class Program
     {
-        static void Main(string[] args)
+        public abstract class Unit
         {
-            Console.WriteLine("Hello, World!");
+            private int movement;
         }
     }
 }
