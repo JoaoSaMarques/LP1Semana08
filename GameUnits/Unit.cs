@@ -7,6 +7,8 @@ namespace GameUnits
         public abstract class Unit
         {
             private int movement;
+
+            public int Health { get; set; }
         }
     }
 }
