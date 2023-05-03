@@ -2,7 +2,7 @@
 
 namespace GameUnits
 {
-    public class MilitaryUnit : Unit, IAttackable
+    public class MilitaryUnit : Unit
     {
         //Strength of attacks
         public int AttackPower { get; }
@@ -28,7 +28,7 @@ namespace GameUnits
         }
 
         //Attack
-        public void Attack(Unit unit)
+        public override void Attack(Unit unit)
         {
             //Damage taken translates to health - attack strength
             unit.Health -= AttackPower;
