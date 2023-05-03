@@ -9,5 +9,8 @@ namespace GameUnits
 
         //Xp of unit
         public int XP { get; private set; }
+
+        //Override cost to Strength + xp
+        public override float Cost => AttackPower + XP;
     }
 }
