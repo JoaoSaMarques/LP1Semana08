@@ -23,6 +23,10 @@ namespace GameUnits
 
             //Unit constructor
             public Unit(int movement, int health)
+            {
+                this.movement = movement;
+                Health = health;
+            }
         }
     }
 }
