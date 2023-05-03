@@ -19,5 +19,12 @@ namespace GameUnits
             //Attack Power
             AttackPower = attackPower;
         }
+
+        //Calculate distance when moving
+        public override void Move(int distance)
+        {
+            //Distance of movement
+            Console.WriteLine($"MilitaryUnit moved {distance} tiles.");
+        }
     }
 }
