@@ -19,9 +19,6 @@ namespace GameUnits
             Console.WriteLine($"Unit moved {distance} tiles.");
         }
 
-        //Attack
-        public abstract void Attack(Unit unit);
-
         //Unit constructor
         public Unit(int movement, int health)
         {
