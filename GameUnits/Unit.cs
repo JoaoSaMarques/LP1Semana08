@@ -2,31 +2,28 @@
 
 namespace GameUnits
 {
-    class Program
+    public abstract class Unit
     {
-        public abstract class Unit
+        //Movement
+        private int movement;
+
+        //Health
+        public int Health { get; set; }
+
+        //Cost
+        public abstract float Cost { get; }
+
+        //Movement distance
+        public virtual void Move(int distance)
         {
-            //Movement
-            private int movement;
+            Console.WriteLine($"Unit moved {distance} tiles.");
+        }
 
-            //Health
-            public int Health { get; set; }
-
-            //Cost
-            public abstract float Cost { get; }
-
-            //Movement distance
-            public virtual void Move(int distance)
-            {
-                Console.WriteLine($"Unit moved {distance} tiles.");
-            }
-
-            //Unit constructor
-            public Unit(int movement, int health)
-            {
-                this.movement = movement;
-                Health = health;
-            }
+        //Unit constructor
+        public Unit(int movement, int health)
+        {
+            this.movement = movement;
+            Health = health;
         }
     }
 }
