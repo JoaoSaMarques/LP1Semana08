@@ -26,5 +26,14 @@ namespace GameUnits
             //Distance of movement
             Console.WriteLine($"MilitaryUnit moved {distance} tiles.");
         }
+
+        //Attack
+        public override void Attack(Unit unit)
+        {
+            //Damage taken translates to health - attack strength
+            unit.Health -= AttackPower;
+            //Gain xp when hitting
+            XP++;
+        }
     }
 }
