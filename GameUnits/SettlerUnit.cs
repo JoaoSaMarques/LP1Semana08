@@ -2,11 +2,8 @@
 
 namespace GameUnits
 {
-    class Program
+    public class SettlerUnit : Unit
     {
-        static void Main(string[] args)
-        {
-            Console.WriteLine("Hello, World!");
-        }
+        public override float Cost => 5;
     }
 }
