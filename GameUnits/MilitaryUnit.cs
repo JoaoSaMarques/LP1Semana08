@@ -30,10 +30,18 @@ namespace GameUnits
         //Attack
         public override void Attack(Unit unit)
         {
-            //Damage taken translates to health - attack strength
-            unit.Health -= AttackPower;
-            //Gain xp when hitting
-            XP++;
+            if (unit is MilitaryUnit)
+            {
+                MilitaryUnit enemy = unit as MilitaryUnit;
+                int damage = Math.Min(AttackPower, enemy.Health);
+                enemy.Health -= damage;
+                XP += damage;
+            }
+        }
+
+        public override string ToString()
+        {
+            return $"{base.ToString()} AP={AttackPower} XP={XP}";
         }
     }
 }

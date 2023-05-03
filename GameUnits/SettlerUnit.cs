@@ -18,5 +18,10 @@ namespace GameUnits
             //Distance
             Console.WriteLine($"SettlerUnit moved {distance} tiles.");
         }
+
+        public override void Attack(Unit unit)
+        {
+            // SettlerUnit cannot attack
+        }
     }
 }

@@ -19,11 +19,19 @@ namespace GameUnits
             Console.WriteLine($"Unit moved {distance} tiles.");
         }
 
+        public abstract void Attack(Unit unit);
+        
         //Unit constructor
         public Unit(int movement, int health)
         {
             this.movement = movement;
             Health = health;
+        }
+
+        //Override string
+        public override string ToString()
+        {
+            return $"{GetType().Name}: HP={Health} COST={Cost:F2}";
         }
     }
 }
