@@ -2,11 +2,11 @@
 
 namespace GameUnits
 {
-    class Program
+    public class MilitaryUnit : Unit
     {
-        static void Main(string[] args)
+        public int AttackPower { get; }
         {
-            Console.WriteLine("Hello, World!");
+            
         }
     }
 }
