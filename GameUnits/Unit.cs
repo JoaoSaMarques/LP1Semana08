@@ -13,6 +13,9 @@ namespace GameUnits
             public abstract float Cost { get; }
 
             public virtual void Move(int distance)
+            {
+                Console.WriteLine($"Unit moved {distance} tiles.");
+            }
         }
     }
 }
