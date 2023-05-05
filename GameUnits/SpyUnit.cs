@@ -2,10 +2,15 @@
 
 namespace GameUnits
 {
-    public abstract class SpyClass : XPUnit
+    public class SpyUnit : XPUnit
     {
         //Override the cost of Unit
         public override float Cost => 12.5f;
+
+        //Constructor
+        public SpyUnit() : base(8, 2)
+        {
+        }
 
         //Get secret information
         public void GetSecretInfo(Unit unit)

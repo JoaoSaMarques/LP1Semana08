@@ -7,6 +7,9 @@ namespace GameUnits
         //Strength of attacks
         public int AttackPower { get; }
 
+        //Override cost to Strength + xp
+        public override float Cost => AttackPower + XP;
+
         //Constructor
         public MilitaryUnit(int movement, int health, int attackPower) : base(movement, health)
         {
