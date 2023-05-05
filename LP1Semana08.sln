@@ -9,6 +9,12 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GameUnits", "GameUnits\Game
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OverrideVsNew", "OverrideVsNew\OverrideVsNew.csproj", "{60FDA4DB-C0BD-4081-9FA6-8D8338BBA315}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClassVsStruct", "ClassVsStruct\ClassVsStruct.csproj", "{3984FD5B-54F4-4FDF-94CD-7B2E84DCDDF1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Polimorfismo", "Polimorfismo\Polimorfismo.csproj", "{DEAD8A3D-552A-45FE-98FA-11219C11822D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StructWithRef", "StructWithRef\StructWithRef.csproj", "{18EB72DD-C273-485A-9E7F-3CCE9E45E0AD}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -30,5 +36,17 @@ Global
 		{60FDA4DB-C0BD-4081-9FA6-8D8338BBA315}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{60FDA4DB-C0BD-4081-9FA6-8D8338BBA315}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{60FDA4DB-C0BD-4081-9FA6-8D8338BBA315}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3984FD5B-54F4-4FDF-94CD-7B2E84DCDDF1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3984FD5B-54F4-4FDF-94CD-7B2E84DCDDF1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3984FD5B-54F4-4FDF-94CD-7B2E84DCDDF1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3984FD5B-54F4-4FDF-94CD-7B2E84DCDDF1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DEAD8A3D-552A-45FE-98FA-11219C11822D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DEAD8A3D-552A-45FE-98FA-11219C11822D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DEAD8A3D-552A-45FE-98FA-11219C11822D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DEAD8A3D-552A-45FE-98FA-11219C11822D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{18EB72DD-C273-485A-9E7F-3CCE9E45E0AD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{18EB72DD-C273-485A-9E7F-3CCE9E45E0AD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{18EB72DD-C273-485A-9E7F-3CCE9E45E0AD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{18EB72DD-C273-485A-9E7F-3CCE9E45E0AD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
