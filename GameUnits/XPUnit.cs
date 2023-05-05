@@ -13,5 +13,11 @@ namespace GameUnits
             //Set XP value
             XP = 0;
         }
+
+        //Override string
+        public override string ToString()
+        {
+            return $"{base.ToString()} XP={XP}";
+        }
     }
 }
