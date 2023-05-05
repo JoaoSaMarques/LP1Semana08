@@ -29,5 +29,12 @@ namespace GameUnits
                 XP += 1;
             }
         }
+
+        //Movement
+        public override void Move(int distance)
+        {
+            //Distance of movement
+            Console.WriteLine($"SpyUnit moved {distance} tiles.");
+        }
     }
 }
