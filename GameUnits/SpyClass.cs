@@ -36,5 +36,11 @@ namespace GameUnits
             //Distance of movement
             Console.WriteLine($"SpyUnit moved {distance} tiles.");
         }
+
+        //Spy cannot attack
+        public override void Attack(Unit unit)
+        {
+            //So it does nothing
+        }
     }
 }
