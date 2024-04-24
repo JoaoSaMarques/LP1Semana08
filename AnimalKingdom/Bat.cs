@@ -1,6 +1,6 @@
 ﻿namespace AnimalKingdom
 {
-    public class Bat : Animal, ICanFly
+    public class Bat : Animal, ICanFly, IMammal
     {
         public override string Sound()
         {
@@ -8,5 +8,7 @@
         }
 
         public int NumberOfWings { get;} = 2;
+
+        public int NumberOfNipples { get;} = 2;
     }
 }
