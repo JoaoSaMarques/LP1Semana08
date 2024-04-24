@@ -1,20 +1,14 @@
 ﻿using System;
-using System.Dynamic;
-using System.Reflection.Metadata.Ecma335;
+using System.Collections.Generic;
 
-namespace PlayerManager1
+public class Player
 {
-    public class Player
+    public string Name { get; set; }
+    public int Score { get; set; }
+
+    public Player(string name, int score)
     {
-        public Player(string name, int score)
-        {
-            Name = name;
-            Score = score;
-        }
-
-        readonly string Name { get; }
-        public int Score { get; set; }
+        Name = name;
+        Score = score;
     }
-    
-
 }

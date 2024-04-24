@@ -75,7 +75,7 @@ namespace PlayerManager1 // >>> Change to PlayerManager2 for exercise 4 <<< //
 
                 // Wait for user to press a key...
                 Console.Write("\nPress any key to continue...");
-                Console.ReadKey(true);
+                Console.ReadLine();
                 Console.WriteLine("\n");
 
                 // Loop keeps going until players choses to quit (option 4)
@@ -98,7 +98,8 @@ namespace PlayerManager1 // >>> Change to PlayerManager2 for exercise 4 <<< //
         {
             string NameOfNewPlayer = Console.ReadLine();
             int ValueOfNewPlayer = int.Parse(Console.ReadLine());
-            new Player(NameOfNewPlayer, ValueOfNewPlayer);
+            Player newPlayer = new Player(NameOfNewPlayer, ValueOfNewPlayer);
+            playerList.Add(newPlayer);
         }
 
         /// <summary>
@@ -112,7 +113,11 @@ namespace PlayerManager1 // >>> Change to PlayerManager2 for exercise 4 <<< //
         /// </param>
         private static void ListPlayers(IEnumerable<Player> playersToList)
         {
-            Console.WriteLine($"Players: " + playersToList);
+            Console.WriteLine($"Players: ");
+            foreach (Player player in playersToList)
+            {
+                Console.WriteLine($"{player.Name}) - {player.Score}");
+            }
         }
 
         /// <summary>
@@ -120,7 +125,7 @@ namespace PlayerManager1 // >>> Change to PlayerManager2 for exercise 4 <<< //
         /// </summary>
         private void ListPlayersWithScoreGreaterThan()
         {
-            return 
+            return;
         }
 
         /// <summary>
