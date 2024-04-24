@@ -139,7 +139,7 @@ namespace PlayerManager2 // >>> Change to PlayerManager2 for exercise 4 <<< //
         {
             foreach (Player player in playerList)
             {
-                if (player.Score < minScore)
+                if (player.Score > minScore)
                 {
                     yield return player;
                 }

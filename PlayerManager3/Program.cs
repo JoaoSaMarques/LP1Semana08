@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Reflection.Metadata.Ecma335;
+using System.Linq;
 
 namespace PlayerManager3 // >>> Change to PlayerManager2 for exercise 4 <<< //
 {
@@ -125,7 +126,15 @@ namespace PlayerManager3 // >>> Change to PlayerManager2 for exercise 4 <<< //
         /// </summary>
         private void ListPlayersWithScoreGreaterThan()
         {
-            return;
+            Console.Write("Enter the minimum score: ");
+            int minScore = int.Parse(Console.ReadLine());
+            var playersWithScoreGreaterThan = GetPlayersWithScoreGreaterThan(minScore);
+            var sortedPlayers = playersWithScoreGreaterThan.OrderByDescending(p => p.Score);
+            Console.WriteLine($"Players with score greater than {minScore}: ");
+            foreach (Player player in sortedPlayers)
+            {
+                Console.WriteLine($"{player.Name}) - {player.Score}");
+            }
         }
 
         /// <summary>
@@ -139,7 +148,7 @@ namespace PlayerManager3 // >>> Change to PlayerManager2 for exercise 4 <<< //
         {
             foreach (Player player in playerList)
             {
-                if (player.Score < minScore)
+                if (player.Score > minScore)
                 {
                     yield return player;
                 }
