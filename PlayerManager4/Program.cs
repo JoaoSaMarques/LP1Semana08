@@ -115,7 +115,7 @@ namespace PlayerManager4 // >>> Change to PlayerManager2 for exercise 4 <<< //
         private static void ListPlayers(IEnumerable<Player> playersToList)
         {
             Console.WriteLine($"Players: ");
-            foreach (Player player in playersToList)
+            foreach (Player player in playersToList.OrderBy(p => p, CompareByName.AscendingByName))
             {
                 Console.WriteLine($"{player.Name}) - {player.Score}");
             }
