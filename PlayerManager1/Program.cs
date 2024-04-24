@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Reflection.Metadata.Ecma335;
 
 namespace PlayerManager1 // >>> Change to PlayerManager2 for exercise 4 <<< //
 {
@@ -86,9 +87,8 @@ namespace PlayerManager1 // >>> Change to PlayerManager2 for exercise 4 <<< //
         /// </summary>
         private void ShowMenu()
         {
-            // /////////////////// //
-            // COMPLETE ME PLEASE! //
-            // /////////////////// //
+            Console.WriteLine("1 - Insert Player, 2 - List Players," +
+            "3 - Score greater than, 4 - Leave");
         }
 
         /// <summary>
@@ -96,9 +96,9 @@ namespace PlayerManager1 // >>> Change to PlayerManager2 for exercise 4 <<< //
         /// </summary>
         private void InsertPlayer()
         {
-            // /////////////////// //
-            // COMPLETE ME PLEASE! //
-            // /////////////////// //
+            string NameOfNewPlayer = Console.ReadLine();
+            int ValueOfNewPlayer = int.Parse(Console.ReadLine());
+            new Player(NameOfNewPlayer, ValueOfNewPlayer);
         }
 
         /// <summary>
@@ -112,9 +112,7 @@ namespace PlayerManager1 // >>> Change to PlayerManager2 for exercise 4 <<< //
         /// </param>
         private static void ListPlayers(IEnumerable<Player> playersToList)
         {
-            // /////////////////// //
-            // COMPLETE ME PLEASE! //
-            // /////////////////// //
+            Console.WriteLine($"Players: " + playersToList);
         }
 
         /// <summary>
@@ -122,9 +120,7 @@ namespace PlayerManager1 // >>> Change to PlayerManager2 for exercise 4 <<< //
         /// </summary>
         private void ListPlayersWithScoreGreaterThan()
         {
-            // /////////////////// //
-            // COMPLETE ME PLEASE! //
-            // /////////////////// //
+            return 
         }
 
         /// <summary>
@@ -136,9 +132,13 @@ namespace PlayerManager1 // >>> Change to PlayerManager2 for exercise 4 <<< //
         /// </returns>
         private IEnumerable<Player> GetPlayersWithScoreGreaterThan(int minScore)
         {
-            // /////////////////// //
-            // COMPLETE ME PLEASE! //
-            // /////////////////// //
+            foreach (Player player in playerList)
+            {
+                if (player.Score < minScore)
+                {
+                    yield return player;
+                }
+            }
         }
     }
 }
