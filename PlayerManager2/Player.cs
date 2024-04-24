@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace PlayerManager1
+namespace PlayerManager2
 {
     public class Player
     {
