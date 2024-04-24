@@ -13,17 +13,7 @@
     class Dog {
         +override string Sound()
     }
-
-    class Bat {
-        +Bat()
-    }
-
-    class Bee {
-        +Bee()
-    }
-
+    
     Animal <|-- Cat
     Animal <|-- Dog
-    Animal <|-- Bat
-    Animal <|-- Bee
 ```
