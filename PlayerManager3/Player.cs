@@ -22,7 +22,7 @@ namespace PlayerManager3
             }
 
             // Compare the scores of the two players
-            return this.Score.CompareTo(other.Score);
+            return other.Score.CompareTo(this.Score);
         }
     }
 }
