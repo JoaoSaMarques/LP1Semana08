@@ -2,7 +2,7 @@ namespace GameUnit
 {
     public class SettlerUnit : Unit // Heranca!!
     {
-        public SettlerUnit(int mov, int health) : base(1, 3)
+        public SettlerUnit() : base(1, 3)
         {                                         // movement = 1, health = 3
         }
 
