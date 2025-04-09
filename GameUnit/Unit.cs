@@ -11,7 +11,11 @@ namespace GameUnit
             Health = health;
         }
 
-        public int Move { get { return movement;}}
+        public void Move()
+        {
+            string roman = ConvertToRoman(movement);
+            Console.WriteLine($"Unit moved {roman} spaces");
+        }
 
         public float Cost { get;}
     }
