@@ -1,3 +1,6 @@
+using System;
+using System.Globalization;
+
 namespace GameUnit
 {
     public class Unit
@@ -13,8 +16,11 @@ namespace GameUnit
 
         public void Move()
         {
-            string roman = ConvertToRoman(movement);
-            Console.WriteLine($"Unit moved {roman} spaces");
+            var romanFormat = new NumberFormatInfo
+            {
+                NumberRomanNumeral = true
+            };
+            Console.WriteLine($"Unit moved {movement.ToString("N", romanFormat)} spaces");
         }
 
         public abstract float Cost { get; }
