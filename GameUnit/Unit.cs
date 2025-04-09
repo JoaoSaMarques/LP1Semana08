@@ -17,6 +17,6 @@ namespace GameUnit
             Console.WriteLine($"Unit moved {roman} spaces");
         }
 
-        public float Cost { get;}
+        public abstract float Cost { get; }
     }
 }
