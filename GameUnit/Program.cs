@@ -6,7 +6,12 @@ namespace GameUnit
     {
         private static void Main(string[] args)
         {
-            Console.WriteLine("Hello LP1!");
+            // Test MilitaryUnit
+            var soldier = new MilitaryUnit(2, 10, 3);
+            Console.WriteLine("Testing MilitaryUnit:");
+            soldier.Move();
+            Console.WriteLine($"Health: {soldier.Health}");
+            Console.WriteLine($"Cost: {soldier.Cost}");
         }
     }
 }
