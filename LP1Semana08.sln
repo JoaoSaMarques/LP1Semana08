@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MiniGame", "MiniGame\MiniGa
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GameUnit", "GameUnit\GameUnit.csproj", "{A086584E-76BC-49D4-B2C3-D501D821A047}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StructWithRef", "StructWithRef\StructWithRef.csproj", "{36D9A71F-780A-4B6A-A013-E1D28702F182}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -55,6 +57,18 @@ Global
 		{A086584E-76BC-49D4-B2C3-D501D821A047}.Release|x64.Build.0 = Release|Any CPU
 		{A086584E-76BC-49D4-B2C3-D501D821A047}.Release|x86.ActiveCfg = Release|Any CPU
 		{A086584E-76BC-49D4-B2C3-D501D821A047}.Release|x86.Build.0 = Release|Any CPU
+		{36D9A71F-780A-4B6A-A013-E1D28702F182}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{36D9A71F-780A-4B6A-A013-E1D28702F182}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{36D9A71F-780A-4B6A-A013-E1D28702F182}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{36D9A71F-780A-4B6A-A013-E1D28702F182}.Debug|x64.Build.0 = Debug|Any CPU
+		{36D9A71F-780A-4B6A-A013-E1D28702F182}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{36D9A71F-780A-4B6A-A013-E1D28702F182}.Debug|x86.Build.0 = Debug|Any CPU
+		{36D9A71F-780A-4B6A-A013-E1D28702F182}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{36D9A71F-780A-4B6A-A013-E1D28702F182}.Release|Any CPU.Build.0 = Release|Any CPU
+		{36D9A71F-780A-4B6A-A013-E1D28702F182}.Release|x64.ActiveCfg = Release|Any CPU
+		{36D9A71F-780A-4B6A-A013-E1D28702F182}.Release|x64.Build.0 = Release|Any CPU
+		{36D9A71F-780A-4B6A-A013-E1D28702F182}.Release|x86.ActiveCfg = Release|Any CPU
+		{36D9A71F-780A-4B6A-A013-E1D28702F182}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
