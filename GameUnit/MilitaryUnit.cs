@@ -10,5 +10,8 @@ namespace GameUnit
             AttackPower = attackPower;
             XP = 0;
         }
+
+        public override int Health => base.Health + XP;
+
     }
 }
