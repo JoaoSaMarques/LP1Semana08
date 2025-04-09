@@ -3,7 +3,7 @@ namespace GameUnit
     public class Unit
     {
         private readonly int movement;
-        virtual int Health { get; set; }
+        public virtual int Health { get; set; }
 
         public Unit(int movement, int health)
         {
@@ -13,6 +13,6 @@ namespace GameUnit
 
         public int Move { get { return movement;}}
 
-        public float Cost { get; }
+        public float Cost { get;}
     }
 }
