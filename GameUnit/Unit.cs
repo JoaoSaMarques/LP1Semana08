@@ -20,5 +20,10 @@ namespace GameUnit
         }
 
         public abstract float Cost { get; }
+
+        public override string ToString()
+        {
+            return $"{GetType().Name}: HP={Health} COST={Cost:F2}";
+        }
     }
 }
