@@ -13,5 +13,7 @@ namespace GameUnit
 
         public override int Health => base.Health + XP;
 
+        public override float Cost => AttackPower + XP;
+
     }
 }
