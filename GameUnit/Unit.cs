@@ -1,9 +1,9 @@
+using Humanizer;
 using System;
-using Humanizer
 
 namespace GameUnit
 {
-    public class Unit
+    public abstract class Unit
     {
         private readonly int movement;
         public virtual int Health { get; set; }
