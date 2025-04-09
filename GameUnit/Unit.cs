@@ -12,5 +12,7 @@ namespace GameUnit
         }
 
         public int Move { get { return movement;}}
+
+        public float Cost { get; }
     }
 }
