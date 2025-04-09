@@ -15,5 +15,10 @@ namespace GameUnit
 
         public override float Cost => AttackPower + XP;
 
+        public void Attack(Unit target)
+        {
+            XP++;
+            target.Health -= AttackPower;
+        }
     }
 }
