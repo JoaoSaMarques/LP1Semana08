@@ -12,6 +12,12 @@ namespace GameUnit
             soldier.Move();
             Console.WriteLine($"Health: {soldier.Health}");
             Console.WriteLine($"Cost: {soldier.Cost}");
+
+            // Test attack
+            var target = new MilitaryUnit(1, 5, 1);
+            soldier.Attack(target);
+            Console.WriteLine($"After attack - Soldier XP: {soldier.XP}");
+            Console.WriteLine($"Target Health: {target.Health}");
         }
     }
 }
