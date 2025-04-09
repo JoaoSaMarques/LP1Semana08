@@ -18,6 +18,13 @@ namespace GameUnit
             soldier.Attack(target);
             Console.WriteLine($"After attack - Soldier XP: {soldier.XP}");
             Console.WriteLine($"Target Health: {target.Health}");
+
+            // Test SettlerUnit
+            var settler = new SettlerUnit();
+            Console.WriteLine("\nTesting SettlerUnit:");
+            settler.Move();
+            Console.WriteLine($"Health: {settler.Health}");
+            Console.WriteLine($"Cost: {settler.Cost}");
         }
     }
 }
