@@ -1,5 +1,5 @@
 using System;
-using System.Globalization;
+using Humanizer
 
 namespace GameUnit
 {
@@ -16,11 +16,7 @@ namespace GameUnit
 
         public void Move()
         {
-            var romanFormat = new NumberFormatInfo
-            {
-                NumberRomanNumeral = true
-            };
-            Console.WriteLine($"Unit moved {movement.ToString("N", romanFormat)} spaces");
+            Console.WriteLine($"Unit moved {movement.ToRoman()} spaces");
         }
 
         public abstract float Cost { get; }
