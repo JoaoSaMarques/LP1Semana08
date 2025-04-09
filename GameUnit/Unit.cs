@@ -10,5 +10,7 @@ namespace GameUnit
             this.movement = movement;
             Health = health;
         }
+
+        public int Move { get { return movement;}}
     }
 }
